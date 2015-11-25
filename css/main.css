@@ -1,0 +1,50 @@
+body {
+  background: fixed url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png) repeat; }
+
+.wrapperMain {
+  margin: 50px auto;
+  width: 600px;
+  text-align: center; }
+  .wrapperMain ul {
+    list-style: none outside none; }
+  .wrapperMain .clickTabs li {
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+    line-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer; }
+  .wrapperMain .li:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+    border: 1px solid rgba(0, 0, 0, 0.6); }
+  .wrapperMain .showTabs .showLi {
+    margin: 0 auto;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+
+.activeClick {
+  background: -webkit-gradient(linear, left bottom, left top, from(#64656D), color-stop(#44465A), to(#64656D));
+  background: -webkit-linear-gradient(bottom, #64656D, #44465A, #64656D);
+  background: linear-gradient(to top, #64656D, #44465A, #64656D);
+  color: #A9AAAD; }
+
+.notActiveClick {
+  background: -webkit-gradient(linear, left bottom, left top, from(#44465A), color-stop(#B8B8B8), to(#44465A));
+  background: -webkit-linear-gradient(bottom, #44465A, #B8B8B8, #44465A);
+  background: linear-gradient(to top, #44465A, #B8B8B8, #44465A);
+  color: #3B3B3B; }
+
+.notActive {
+  display: none; }
+
+.active {
+  display: block; }

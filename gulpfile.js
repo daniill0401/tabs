@@ -2,7 +2,7 @@
 
 var
 	gulp        = require('gulp'),
-	browserSync = require('browser-sync'),
+	browserSync = require('browser-sync').create(),
 	jade        = require('gulp-jade'),
 	scss = require('gulp-sass'),
 	plumber     = require('gulp-plumber'),
@@ -15,20 +15,19 @@ var
 		jade : {
 			location: 'jade/*.jade',
 			compiled: 'jade/*.jade',
-			destination: 'html'
+			destination: ''
 		},
 
 		scss : {
 			location    : 'scss/*.scss',
-			entryPoint  : 'css/main.css',
 			destination: 'css'
 		},
 
 		browserSync : {
-			baseDir : 'html',
-			watchPaths : ['html/*.html', 
-						  'css/**/*.css', 
-						  'js/**/*.js']
+			baseDir : '',
+			watchPaths : ['*.html', 
+						  'scss/*.scss', 
+						  'js/*.js']
 		},
 
 		compile__css : {

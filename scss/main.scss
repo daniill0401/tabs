@@ -1,0 +1,49 @@
+body {
+	background: fixed url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png) repeat;
+}
+.wrapperMain {
+	margin: 50px auto;
+	width: 600px;
+	text-align: center;
+	ul {
+		list-style: none outside none;
+	}
+	.clickTabs li {
+			display: inline-block;
+			text-align: center;
+			width: 130px;
+			line-height: 40px;
+			border: 1px solid rgba(0,0,0,.6);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.li:hover {
+			transform: scale(1.03);
+			border: 1px solid rgba(0,0,0,.6);
+		}
+	.showTabs {
+		.showLi {
+			margin: 0 auto;
+			width: 400px;
+			box-sizing: border-box;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		
+	}
+
+}
+.activeClick {
+	background: linear-gradient(to top, #64656D, #44465A, #64656D);
+	color: #A9AAAD;
+}
+.notActiveClick {
+	background: linear-gradient(to top, #44465A, #B8B8B8, #44465A);
+	color: #3B3B3B;
+}
+.notActive {
+	display: none;
+}
+.active {
+	display: block;
+}

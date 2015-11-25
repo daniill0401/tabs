@@ -4,6 +4,20 @@ html(lang="ru")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width")
-		script(src="bower/jquery/jquery.min.js")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
 
-body
+	body
+		.wrapperMain
+			.clickTabs
+				ul
+					- var text = ['The textbook market does not operate in exactly the same manner as most consumer markets. First, the end consumers (students) do not select the product, and the product is not purchased by faculty or professors. Therefore, price is removed from the purchasing decision, giving the producer (publishers) disproportionate market power to set prices high.','This fundamental difference in the market is often cited as the primary reason that prices are out of control. The term "broken market" first appeared in the economist James Kochs analysis of the market commissioned by the Advisory Committee on Student Financial Assistance.','This situation is exacerbated by the lack of competition in the textbook market. Consolidation in the past few decades[when?] has reduced the number of major textbook companies from around 30 to just a handful.[7] Consequently, there is less competition than there used to be, and the high cost of starting up keeps new companies from entering.', ' major textbook companies from around 30 to just a handful.[7] Consequently, there is less competition than there used to be, and the high cost of starting up keeps new companies from entering']
+					- var array = new Array(4)
+					each val, index in array
+						li.li(src=index+1)= 'Tab '+(index+1)
+			.showTabs
+				ul
+					each val, index in text
+						li.showLi(src=index+1)= val
+
+		script(src="bowerDependencies/jquery/jquery.min.js")
+		script(type="text/javascript" src="js/main.js")
